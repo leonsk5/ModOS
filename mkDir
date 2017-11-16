@@ -1,16 +1,16 @@
-import os
+import os    # importa do modulo 
 
-curDir = os.getcwd()
+curDir = os.getcwd()  # verificar o diretorio atual do susuario
+ 
+print(curDir)       
 
-print(curDir)
+os.mkdir('newDir') # cria o diretorio
 
-os.mkdir('newDir')
+import time      # importa o modulo time
 
-import time
+time.sleep(2)  # usando o modulo time para gerar 2 segundos de delay
 
+os.rename('newDir', 'newDir2') # renomeia o diretorio
 time.sleep(2)
 
-os.rename('newDir', 'newDir2')
-time.sleep(2)
-
-os.rmdir('newDir2')
+os.rmdir('newDir2') # deleta o diretorio
